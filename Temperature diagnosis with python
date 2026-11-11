@@ -1,0 +1,65 @@
+temp = float(input('Enter patient temperature(in degrees celsius): '))# Patient's obtained temperature
+import time
+
+if temp >= 36.0 and temp <= 36.9:# Avarage temperature
+  print('\npatient has regular temperature')
+  
+elif temp >= 35.0 and temp <= 35.9:# Slightly below avarage
+  print('\nPatient has risk of hyporthermia, early sepsis and malnutrition anorexia nervosa or hypothyroidism')
+  time.sleep(4)
+  print("\n\033[4mDEFINITION\033[0m")
+  print("\nEarly Sepsis: A severe infection where the immune system goes into overdrive. While most people get a fever, vulnerable populations (like the elderly or infants) often develop a low temperature instead.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nHypothermia is a medical emergency that occurs when your core body temperature drops below 95°F (35°C). It typically happens when the body loses heat faster than it can produce it. While it is most commonly triggered by environmental exposure to freezing temperatures or cold water, it can also be induced by internal physiological failure, such as severe metabolic slowdown.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nAnorexia nervosa is a serious mental health condition and restrictive eating disorder characterized by an intense fear of gaining weight and a severely restricted food intake.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\n\033[4mATTENTION THESE NOTES ARE FOR EDUCATIONAL PURPOSES ONLY, NOT FOR REAL LIFE SITUATIONS\033[0m")
+  
+elif temp >= 37.0 and temp <= 37.5:# Slightly above avarage
+  print('\nPatient has low grade baseline or normal variation')
+  
+elif temp >= 37.6 and temp <= 38.0:# Above avarage 
+  print('\nPatient has low grade fever')
+  
+elif temp > 38.0 and temp < 39.9:# Extreemly above avarage
+  print('\nPatient has pyrexia')
+  time.sleep(4)
+  print("\n\033[4mDEFINITION\033[0m")
+  print("\nPyrexia is the medical term for a fever—an elevation in core body temperature above the normal range")
+  print("----------------------------------------------------------------------------------------------")
+  print("\n\033[4mATTENTION THESE NOTES ARE FOR EDUCATIONAL PURPOSES ONLY, NOT FOR REAL LIFE SITUATIONS\033[0m")
+  
+elif temp >= 40.0 and temp <= 46.5:# Dangerously above avarage
+  print('\nPatient has environmental heatstroke')
+  time.sleep(4)
+  print("\033[4mDEFINITION\033[0m")
+  print("\nEnvironmental heat stroke (often classified as classic or non-exertional heat stroke) is a life-threatening form of hyperthermia where the body's core temperature rises dangerously high (typically above 104°F [40°C]) due to overwhelming external heat exposure.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\n\033[4mATTENTION THESE NOTES ARE FOR EDUCATIONAL PURPOSES ONLY, NOT FOR REAL LIFE SITUATIONS\033[0m")
+  
+elif temp >= 32.2 and temp <= 34.9:# Extreemly below avarage
+  print('\nPatient has risk of server septic shock, adrenal insufficiency and hypoglycemia')
+  time.sleep(4)
+  print("\n\033[4mDEFINITION\033[0m")
+  print("\nSever septic shock is when blood pressure drops dangerously low and blood flow to vital organs decrease, causing the body's core temperature to decrease")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nAdrenal insuficiency is a life threatening shortage of hormones critical for managing stress, blood perssure and metabolism")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nHypoglycemia: Critically low blood glucose(sugar), often seen as diabetics. Without glucose(sugar), cells lack the energy to produce heat, which can cause body temperature to drop alongside confusion or unconciousness")
+  print("----------------------------------------------------------------------------------------------")
+  print("\n\033[4mATTENTION THESE NOTES ARE FOR EDUCATIONAL PURPOSES ONLY, NOT FOR REAL LIFE SITUATIONS\033[0m")
+  
+elif temp >= 13.3 and temp <= 32.2:# Dangerously below avarage
+  print('\nPatient has risk of myxedema coma, cardiac arrhythmias and end stage organ failure')
+  time.sleep(4)
+  print("\n\033[4mDEFINITION\033[0m")
+  print("\nMyxedema Coma: The most severe, life-threatening form of hypothyroidism. It causes profound lethargy, a dangerous drop in temperature, and can lead to a coma.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nCardiac Arrhythmias: The cold temperature irritates the heart muscle, causing dangerous, irregular heart rhythms like atrial fibrillation or ventricular fibrillation.")
+  print("----------------------------------------------------------------------------------------------")
+  print("\nEnd-Stage Organ Failure: As the heart, kidneys, and liver shut down during terminal illness, the body loses all ability to regulate heat.")
+  print("\n\033[4mATTENTION THESE NOTES ARE FOR EDUCATIONAL PURPOSES ONLY, NOT FOR REAL LIFE SITUATIONS\033[0m")
+
+elif temp > 46.6 or temp < 13.3:
+   print('\n>>>>ERROR>>>TEMPERATURE>>>UNREALISTIC')
